@@ -1,0 +1,24 @@
+{
+    "webPort": 8000,
+
+    "mongodbUrl": "mongodb://push:HPTMtvi4YG04qyM@ec2-52-38-184-66.us-west-2.compute.amazonaws.com:27017/push?authSource=admin",
+
+    "gcm": {
+        "apiKey": "AIzaSyB2YKXKBxu_bB5d6PkDAQ9Loc1WytrLBTM"
+    },
+
+    "apn": {
+        "connection": {
+            "gateway": "gateway.sandbox.push.apple.com",
+            "cert": "./apn_prod_cert.pem",
+            "key": "./apn_prod_key.pem"
+        },
+        "feedback": {
+            "address": "feedback.sandbox.push.apple.com",
+            "cert": "./apn_prod_cert.pem",
+            "key": "./apn_prod_key.pem",
+            "interval": 43200,
+            "batchFeedback": true
+        }
+    }
+}
